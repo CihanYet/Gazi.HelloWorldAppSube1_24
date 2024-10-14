@@ -41,7 +41,8 @@ namespace Gazi.HelloWorldAppSube1
             //var sayi = 5.25D;//Implicit (Veri tipinin açık belirtilmediği durum)
             //double number = 5.25;//Explicit (Veri tipinin açıkca belirtildiği durum)
 
-            char c = 'A';
+            char c = 'B';
+
 
             string isim = "Ahmet";
             string soyad = "Mehmet";
