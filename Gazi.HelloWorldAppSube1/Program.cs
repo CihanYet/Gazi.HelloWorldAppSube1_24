@@ -8,16 +8,17 @@ namespace Gazi.HelloWorldAppSube1
         static void Main(string[] args)
         {
 
+            #region Değişkenler-Veri Yapıları
             //Değişkenler-Veri Yapıları
 
             //Console.WriteLine("Gazi");
             //Console.WriteLine("Üniversitesi");
 
-            //byte a;//Veri tipi:byte, ismi a
+            //const byte a=50;//Veri tipi:byte, ismi a
             //byte b;
-            //a = 10;//a değişkenine değer ataması.
+            // a = 10;//a değişkenine değer ataması.
             //b = 20;
-
+            //Console.WriteLine(a);
             //byte c = 30;
 
             //byte a = 30, b;
@@ -38,16 +39,33 @@ namespace Gazi.HelloWorldAppSube1
 
             //float sayi = 3.15f;
 
-            //var sayi = 5.25D;//Implicit (Veri tipinin açık belirtilmediği durum)
+            //var sayi = 5.25;//Implicit (Veri tipinin açık belirtilmediği durum)
             //double number = 5.25;//Explicit (Veri tipinin açıkca belirtildiği durum)
 
-            char c = 'B';
+            //char c = 'B'; 
+            #endregion
+
+            #region String Birleştirme İşlemleri
+            //string isim = "Ahmet";
+            //string soyad = "Mehmet";//Referans:soyad,Değeri:Mehmet
 
 
-            string isim = "Ahmet";
-            string soyad = "Mehmet";
+            //Console.WriteLine("Hoşgeldin, " + isim + " " + soyad);
+            //Console.WriteLine("Hoşgeldin, {0} {1}", isim, soyad);
+            //Console.WriteLine($"Hoşgeldin, {isim} {soyad}"); 
+            #endregion
 
-            Console.ReadKey();
+            #region Kullanıcı Etkileşimleri
+
+            Console.Write("İsminizi Giriniz:");
+            string isim = Console.ReadLine();
+            Console.Write("Soyadınızı Giriniz:");
+            string soyad = Console.ReadLine();
+
+            Console.WriteLine($"Hoşgeldin,\n{isim} {soyad}");
+            #endregion
+           
+            
         }
     }
 }
@@ -90,3 +108,18 @@ namespace Gazi.HelloWorldAppSube1
 //1 Mega Byte (MB) = 1024KB
 //1 Giga Byte (GB) = 1024MB
 //1 Tera Byte (TB) = 1024GB
+
+//Değer tipleri belleğin STACK bölgesinde saklanır. Örn: int,double,float,bool...
+
+//string veri tipi referans tipidir.Referans tipi veriler belleğin HEAP bölgesinde saklanır. Referans tipi verilerin referansları STACK bölgesinde saklanırken, değerleri HEAP bölgesinde saklanır.
+
+//Referans tiplerinde aynı anda 1'den fazla değer saklanır. Bu nedenle daha büyük bellek bölgesine ihtiytaç duyar ve HEAP bölgesinde değerler saklanır.
+
+//Referanslar, HEAP bölgesinde değerlerin adreslerini tutan yapılardır. Değerin kendisini tutmazlar
+
+//Metodların işlerini yapabilmek için aldığı verilere METOD PARAMETRESİ denir.Bir metod gerekirse farklı tiplerde parametreler de alabilir.
+
+//ReadLine(): Console sınıfında bulunan ve satır okuma işlemi yapan bir metoddur. Bu metod çalışmak için parametre istemez ancak okuduğu değeri string tipinde geri döndürür.
+
+//void Metodlar: İşlem yaptıktan sonra geri dönüş yapmayan metodlardır.
+
